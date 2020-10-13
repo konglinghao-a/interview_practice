@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <title>从左侧渐入</title>
+</head>
+
+<body>
+  <button id="fade-in">渐入</button>
+  <button id="clear">消除</button>
+  <div id="fade-div"></div>
+  <script>
+    var btnIn = document.querySelector('button#fade-in');
+    var fadeDiv = document.querySelector('div#fade-div');
+    var clear = document.querySelector('button#clear');
+
+    btnIn.onclick = function () {
+      fadeDiv.className = 'left-fade-in';
+    }
+    clear.onclick = function () {
+      fadeDiv.className = '';
+    }
+  </script>
+</body>
+
+</html>

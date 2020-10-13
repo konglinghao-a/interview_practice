@@ -1,0 +1,23 @@
+/* 从左侧渐入 */
+.left-fade-in {
+  background-color: rgb(138, 188, 209);
+  width: 600px;
+  height: 100px;
+
+  /* 定义动画 */
+  animation-duration: 1s; /* 动画时间 */
+  animation-name: fadein; /* 关键帧名字 */
+}
+
+/* 定义关键帧 */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(-600px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
